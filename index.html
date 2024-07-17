@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Protfolio Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+
+     <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+      >
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav id="nav" class="nav">
+      <h1 class="h1 logo">
+        <a href="#">Mukunth<span>.</span></a>
+        </h1>
+        <ul class="nav-list">
+            <li><a href="#about" class="tiles">About</a></li>
+            <li><a href="#project-section" class="tiles">Work</a></li>
+            <li><a href="#contact-section" class="tiles">Contact</a></li>
+            <li><a href="#about" class="tiles">Login</a></li>
+        </ul>
+    </nav>
+    <?php 
+        $Msg = "";
+        if(isset($_GET['error']))
+        {
+            $Msg = " Please Fill in the Blanks ";
+            echo '<div class="alert alert-danger">'.$Msg.'</div>';
+        }
+        if(isset($_GET['success']))
+        {
+            $Msg = " Your Message Has Been Sent ";
+            echo '<div class="Msg-success"><i class="fa-sharp fa-light fa-circle-xmark"></i><span>'.$Msg.'</span><i class="fa-solid fa-paper-plane-top"></i></div>';
+        }
+    ?>
+    <!--  WELCOME SECTION  -->
+    <section id="Welcome-section">
+        <div  id="intro">
+            <h1 class="animate__animated animate__fadeInLeftBig">Hello, My name is <span>M</span>ukunth</h1>
+            <h2 class="animate__animated animate__fadeInLeftBig">I am <span id="spin">web</span> Developer <i class="fa-sharp fa-solid fa-code fa-beat"></i></h2>
+        </div>
+    </section>
+    
+    <!--  ABOUT SECTION  -->
+    <section id="about">
+        <div id="container">
+        <!--HEADING-->
+        <h3 class="animation-line">ABOUT ME</h3>
+        <div class="wrapper flex">
+            <div class="About-img"><img src="https://lh3.googleusercontent.com/Felvk7dWeYD2wadQ5w6jsRNMYsqyOxnnDiqqYLGUSXaAXSLsb5eqp9pXexYQXII9STgTu-iim0ubl7iwYuvlnEivKT-Ev3jwWci_FweeOQuk10h8Ro-7zaWGOqW0OSHNdb-0nwEu6Ko=w2400"></div>
+            <!--  ARTICLE  -->
+            <div class="About-details">
+                <p>My name is Mukunth, and I am a web full stack developer currently pursuing a Master's in Computer Applications (MCA) at Sastra University. With a strong background in front-end and back-end development, I specialize in creating dynamic and interactive web applications.</p>
+                <p>I am passionate about staying updated with the latest technologies and working collaboratively to deliver high-quality web solutions. With my dedication and expertise, I am ready to contribute to the success of any web development project.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!--project-section-->
+    
+    <section id="project-section">
+        <!--HEADING-->
+        <div class="project-title animate__animated"><h3 class="animation-line">Projects</h3></div>
+        <div class="project-flex  animate__animated">
+            <div class="project-card"><img src="https://img.freepik.com/free-vector/gradient-metaverse-background_23-2149263788.jpg"><aside><h4><i class="fa-solid fa-hashtag"></i> Project 1</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.</p><a href="#">open now</a></aside></div>
+                <div class="project-card animate__animated"><img src="https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg?w=740&t=st=1686380732~exp=1686381332~hmac=cbe941872d6b07c107ca4be313c42f7a8bbeb408619b87c2aeef7642a8647ee5"><aside><h4><i class="fa-solid fa-hashtag"></i> Project 2</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.</p><a href="#">open now</a></aside></div>
+                <div class="project-card animate__animated"><img src="https://img.freepik.com/free-vector/smart-city_23-2148135335.jpg?size=626&ext=jpg&ga=GA1.1.1363891672.1686380700&semt=sph"><aside><h4><i class="fa-solid fa-hashtag"></i> Project 3</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.</p><a href="#">open now</a></aside></div>
+        </div>
+    </section>
+    <div class="section-divided"></div>
+<!--  contact section-->
+    <section id="contact-section">
+        <div class="animate__animated"><h3 class="animation-line">say hello</h3></div>
+        
+        <div class="Message-box">
+            <form action="process.php" method="post">>
+                 <p>I'd love to hear from you!</p>
+                <label for="name">Name<input type="name" name="uname" id="name" placeholder="Jack Ryan" minlength="6" required></label>
+                <label for="mailid">Email Address<input type="email" id="email" name="mailid" placeholder="abc@gmail.com" required></label>
+                <label for="textM">Your meassge<textarea name="textmsg" id="message" rows="5" cols="30" placeholder="Drop your message here.."  minlength="10" required></textarea></label>
+                <input  class="btn" type="submit" name="btn-snt" value="Send message" onclick="Submit()" id="Form-Submit"></input>
+            </form>
+            
+        </div>
+    </section>
+    <div class="section-divided end-divided"></div>
+    <footer>
+        <div class="footer-items">
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project-section">Work</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li>Education</li>
+                <li><a href="https://docs.google.com/document/d/1Bh-aqobZiQ51bPHy9eroiiu7kFPsxf7s/edit?usp=sharing&ouid=112779779439367987126&rtpof=true&sd=true" download>Downloads</a></li>
+            </ul>
+        </nav>
+        <nav id="social-icons">
+            <ul>
+                <li><a target="_blank" href="https://github.com/iMukunth"><i class="fa-brands fa-github"></i></a></li>
+                <li><a target="_blank" href="https://in.linkedin.com/in/mukunth-tata?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/mukunth__"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a><i target="_blank" class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+        </div>
+        <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i> 2023. Designed by Mukunth</p>
+    </footer>
+    <div id="mobile-msg" style="display:none">
+    
+    <img src="https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?w=740&t=st=1686739682~exp=1686740282~hmac=1edfd016c34360bf329a37c354f5dd6db0822cd70d3db53a5d27e914d9193ad7" width="250px">
+    <h1>Website still in development phase only works in desktop screen</h1>
+    </div>
+    
+        <script type="text/javascript">
+         $(document).ready(function() {
+            $(window).on("scroll", function() {
+                console.log("Scroll position: " + $(window).scrollTop());
+            if ($(window).scrollTop() > 800) {
+              $(".project-flex").addClass("animate__fadeInUp");
+              $(".project-title").addClass("animate__fadeInUp");
+            } else {
+              $(".project-flex").removeClass("animate__fadeInUp");
+              $(".project-title").removeClass("animate__fadeInUp");
+            }
+            });
+             //Msg Toogle
+            $(".fa-circle-xmark").click(function() {
+            $(".Msg-success").toggle();
+            });
+        });
+        $(document).ready(function() {
+            var textArray = ["front-end", "back-end", "full-stack"];
+            var index = 0;
+            var spanElement = $("#spin");
+
+            function changeText() {
+                spanElement.fadeOut(200, function() {
+                spanElement.text(textArray[index]);
+                spanElement.fadeIn(200);       
+            });
+            index = (index + 1) % textArray.length;
+            }
+            setInterval(changeText, 1000);
+        });
+    </script>
+    <script>
+        (function($) {
+          $(document).ready(function() {
+            var prevScrollpos = window.pageYOffset;
+
+            $(window).on("scroll", function() {
+              var currentScrollPos = window.pageYOffset;
+              var navbar = $("#nav");
+
+              if (prevScrollpos > currentScrollPos) {
+                navbar.css("top", "0");
+              } else {
+                navbar.css("top", "-50px");
+              }
+
+              prevScrollpos = currentScrollPos;
+            });
+            });
+        })(jQuery);
+       
+    </script>
+
+</body>
+
+    
+</html>
